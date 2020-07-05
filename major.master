@@ -1,0 +1,87 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="major.master.cs" Inherits="major" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        &nbsp;<table style="width: 739px">
+            <tr>
+                <td style="height: 175px">
+                    <asp:Image ID="Image1" runat="server" Height="184px" ImageUrl="~/Images/bus1.jpg"
+                        Width="102%" ImageAlign="Middle" /></td>
+            </tr>
+        </table>
+    </div>
+    <table style="width: 906px">
+            <tr>
+                <td style="width: 152px; height: 316px">
+                    <table style="width: 150px; height: 115px">
+                        <tr>
+                            <td style="width: 180px">
+                                <asp:Label ID="Label1" runat="server" Font-Bold="True" Text="Passengers click!"></asp:Label></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 180px">
+                                <asp:LinkButton ID="LinkButton1" runat="server" Width="191px" BackColor="White" Font-Bold="True" Font-Italic="True" Font-Underline="False" Height="36px" OnClick="LinkButton1_Click">Add comment on bus services</asp:LinkButton></td>
+                        </tr>
+                        <tr>
+                            <td style="height: 21px; width: 180px;">
+                                <asp:LinkButton ID="LinkButton7" runat="server" Font-Bold="True" Font-Italic="True"
+                                    Font-Underline="False" Height="32px" OnClick="LinkButton7_Click" Width="147px">Show all Suggetions</asp:LinkButton></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 180px; height: 21px">
+                                <asp:LinkButton ID="LinkButton8" runat="server" Font-Bold="True" Font-Italic="True"
+                                    Font-Underline="False" Height="32px" OnClick="LinkButton8_Click" Width="145px">Show All Complaints</asp:LinkButton></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 180px; height: 21px">
+                                <asp:LinkButton ID="LinkButton9" runat="server" Font-Bold="True" Font-Italic="True"
+                                    Font-Underline="False" Height="28px" OnClick="LinkButton9_Click" Width="144px">Search Trip</asp:LinkButton></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 180px; height: 21px">
+                                <asp:LinkButton ID="LinkButton6" runat="server" Font-Bold="True" Font-Italic="True">Search vehicle details</asp:LinkButton></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 180px; height: 21px">
+                                <asp:Label ID="Label2" runat="server" Font-Bold="True" Text="Bus owners  only!"></asp:Label></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 180px">
+                                <asp:LinkButton ID="LinkButton2" runat="server" Font-Bold="True" Font-Italic="True"
+                                    Font-Underline="False" OnClick="LinkButton2_Click1">Login</asp:LinkButton></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 180px; height: 21px">
+                                <asp:LinkButton ID="LinkButton5" runat="server" Font-Bold="True" Font-Italic="True"
+                                    Font-Underline="False" OnClick="LinkButton5_Click">Register now</asp:LinkButton></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 180px; height: 21px">
+                                <asp:Label ID="Label3" runat="server" Font-Bold="True" Text="Boss!!"></asp:Label></td>
+                        </tr>
+                        <tr>
+                            <td style="height: 21px; width: 180px;">
+                                <asp:LinkButton ID="LinkButton3" runat="server" Width="176px" Font-Bold="True" Font-Italic="True" Font-Underline="False" Height="23px">RULES & REGULATIONS</asp:LinkButton></td>
+                        </tr>
+                        <tr>
+                            <td style="height: 19px; width: 180px;">
+                                <asp:LinkButton ID="LinkButton4" runat="server" Font-Bold="True" Font-Italic="True" Font-Underline="False" Height="25px">ABOUT US</asp:LinkButton></td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="height: 316px; width: 538px;">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

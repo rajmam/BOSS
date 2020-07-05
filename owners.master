@@ -1,0 +1,64 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="owners.master.cs" Inherits="owners" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        &nbsp;<table style="width: 680px">
+            <tr>
+                <td style="height: 127px">
+                    <asp:Image ID="Image1" runat="server" BorderColor="White" BorderStyle="Double" Height="175px"
+                        ImageUrl="~/Images/Bus123.jpg" Width="810px" /></td>
+            </tr>
+        </table>
+    </div>
+    <table style="width: 720px">
+            <tr>
+                <td style="width: 170px; height: 303px;">
+                    &nbsp;<table style="width: 209px; height: 132px">
+                        <tr>
+                            <td style="width: 178px">
+                                <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click" Font-Bold="True" Font-Italic="True" Font-Size="Large" Font-Underline="False" ForeColor="#404040" Height="27px">* view member details</asp:LinkButton></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 178px">
+                                <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click" Font-Bold="True" Font-Italic="True" Font-Size="Large" Font-Underline="False" ForeColor="#404040" Height="30px">* trip details</asp:LinkButton></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 178px">
+                                <asp:LinkButton ID="LinkButton4" runat="server" OnClick="LinkButton4_Click" Font-Bold="True" Font-Italic="True" Font-Size="Large" Font-Underline="False" ForeColor="#404040" Height="24px">* change password</asp:LinkButton></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 178px; height: 24px;">
+                                </td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="height: 303px;">
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <asp:LinkButton ID="LinkButton3" runat="server" Font-Underline="False" OnClick="LinkButton3_Click">
+                   log out
+                 </asp:LinkButton>
+                   <%Response.Buffer = true;
+                     Response.Expires = 0;
+                     Response.ExpiresAbsolute = DateTime.Now.AddDays(-1);
+                     Response.CacheControl = "no-Cache";
+                     %>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    &nbsp;
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
